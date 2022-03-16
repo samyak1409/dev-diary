@@ -3,9 +3,7 @@
 
 ## Update all Python Packages
 
-1) Open powershell
-
-2) Paste:
+Open powershell and paste:
 ```bash
 pip freeze | %{$_.split('==')[0]} | %{pip install --upgrade $_}
 ```
@@ -17,7 +15,7 @@ pip freeze | %{$_.split('==')[0]} | %{pip install --upgrade $_}
 
 2) Copy the bash code of `…or create a new repository on the command line`
 
-3) Make a local dir for the project files and open git bash there
+3) Make a local dir for the project files and open Git Bash there
 
 4) Paste the copied bash code whose template is the following:
 ```bash
@@ -67,13 +65,64 @@ git push --force
 ```bash
 git add .
 ```
+
 2) Commit the changes:
 ```bash
 git commit --amend -m "new commit message"
 ```
+
 3) Upload:
 ```bash
 git push --force
+```
+
+
+## GitHub Contribution Process with Examples
+
+1) Go to the repository you want to contribute, and fork
+
+2) Open Git Bash, clone the forked repo:
+```bash
+git clone https://github.com/samyak1409/first-contributions.git
+```
+
+3) Add the remote-upstream (remote-origin is your (forked) repo, upstream-origin is repo from which you have forked):
+```bash
+git remote add upstream https://github.com/firstcontributions/first-contributions.git
+```
+
+4) Create a new temp branch for PR and switch to it:
+```bash
+git branch add-samyak-jain
+git checkout add-samyak-jain
+```
+Single command for this: 
+```bash
+git checkout -b add-samyak-jain
+```
+
+5) Now, make the desired changes in the files
+
+6) Add the changed files, commit, and push:
+```bash
+git add .
+git commit -m "Add Samyak Jain to Contributors list"
+git push origin add-samyak-jain
+```
+
+8) Go to the repo, compare and create pull request
+
+9) Congrats! You just completed the standard `Fork -> Clone -> Edit -> PR` workflow that you'll encounter often as a contributor!
+
+10) Once the pull request is merged:
+- Delete the temp branch:
+```bash
+git branch -d add-samyak-jain
+```
+- And then update origin:
+```bash
+git pull upstream
+git push origin
 ```
 
 
