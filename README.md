@@ -3,9 +3,9 @@
 
 ## Update all Python Packages
 
-1) open powershell
+1) Open powershell
 
-2) paste:
+2) Paste:
 ```bash
 pip freeze | %{$_.split('==')[0]} | %{pip install --upgrade $_}
 ```
@@ -13,13 +13,13 @@ pip freeze | %{$_.split('==')[0]} | %{pip install --upgrade $_}
 
 ## Pre-Project Process
 
-1) [make a new GitHub repo](https://github.com/new)
+1) [Make a new GitHub repo](https://github.com/new)
 
-2) copy the bash code of `…or create a new repository on the command line`
+2) Copy the bash code of `…or create a new repository on the command line`
 
-3) make a local dir for the project files and open git bash there
+3) Make a local dir for the project files and open git bash there
 
-4) paste the copied bash code whose template is the following:
+4) Paste the copied bash code whose template is the following:
 ```bash
 git init
 echo "# Repository Name" >> README.md
@@ -28,6 +28,52 @@ git commit -m "init + readme"
 git branch -M main
 git remote add origin HTTPS_URL ("https://github.com/username/repository-name.git")
 git push -u origin main
+```
+
+
+## Go to i-th (a Previous) Commit
+
+1) Copy commit hash using:
+```bash
+git log
+```
+
+2) Paste:
+```bash
+git reset copied_commit_hash
+```
+
+3) 
+Either add the (new) changes and commit:
+```bash
+git add .
+git commit -m "commit message"
+```
+Or restore the committed changes of copied_commit_hash:
+```bash
+git restore .
+```
+
+4) Upload:
+```bash
+git push --force
+```
+`--force` because remote had the commits that we have reset locally
+
+
+## Overwrite Last Commit
+
+1) Add the changed files: (if there aren't any changed files, then the following steps will just change the commit message)
+```bash
+git add .
+```
+2) Commit the changes:
+```bash
+git commit --amend -m "new commit message"
+```
+3) Upload:
+```bash
+git push --force
 ```
 
 
@@ -46,12 +92,12 @@ git push -u origin main
 
 ### Instantly hide a file/folder
 
-go to the parent dir, there, open cmd and paste:
+Go to the parent dir, there, open cmd and paste:
 ```bash
 Attrib +h +s +r "file_name"
 ```
 
-to un-hide:
+To un-hide:
 ```bash
 Attrib -h -s -r "file_name"
 ```
@@ -67,4 +113,7 @@ command | clip
 Press `F7`
 
 
-## [Most famous stack overflow questions](https://stackoverflow.com/questions?tab=Votes)
+## Most famous stack overflow questions
+
+- [Overall](https://stackoverflow.com/questions?tab=Votes)
+- Any topic e.g. [Git](https://stackoverflow.com/questions/tagged/git?sort=MostVotes), [Python](https://stackoverflow.com/questions/tagged/python?sort=MostVotes)
