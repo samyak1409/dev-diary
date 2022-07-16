@@ -162,7 +162,14 @@ command | clip
 Press `F7`
 
 
-## Most famous stack overflow questions
+## Most Voted Stack Overflow Questions
 
 - [Overall](https://stackoverflow.com/questions?tab=Votes)
-- Any topic e.g. [Git](https://stackoverflow.com/questions/tagged/git?sort=MostVotes), [Python](https://stackoverflow.com/questions/tagged/python?sort=MostVotes)
+- Topic-wise e.g. [Git](https://stackoverflow.com/questions/tagged/git?sort=MostVotes), [Python](https://stackoverflow.com/questions/tagged/python?sort=MostVotes)
+
+
+## Most Voted LeetCode Discussions
+
+- [Interview Questions](https://leetcode.com/discuss/interview-question?orderBy=most_votes)
+- [Interview Experiences](https://leetcode.com/discuss/interview-experience?orderBy=most_votes)
+- Etc.
