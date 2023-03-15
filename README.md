@@ -175,3 +175,5 @@ Press `F7`
 - Etc.
 
 ### [Important and Useful links from all over the LeetCode](https://leetcode.com/discuss/general-discussion/665604/Important-and-Useful-links-from-all-over-the-LeetCode)
+
+### [Web Development In 2023 - A Practical Guide](https://youtu.be/u72H_zZzkcw)
