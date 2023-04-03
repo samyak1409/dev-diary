@@ -177,3 +177,9 @@ Press `F7`
 ### [Important and Useful links from all over the LeetCode](https://leetcode.com/discuss/general-discussion/665604/Important-and-Useful-links-from-all-over-the-LeetCode)
 
 ### [Web Development In 2023 - A Practical Guide](https://youtu.be/u72H_zZzkcw)
+
+
+## Open-Source:
+
+- [First Contributions](https://firstcontributions.github.io/#project-list)
+- [Good First Issue / Python](https://goodfirstissue.dev/language/python)
