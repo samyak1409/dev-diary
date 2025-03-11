@@ -183,3 +183,8 @@ Press `F7`
 
 - [First Contributions](https://firstcontributions.github.io/#project-list)
 - [Good First Issue / Python](https://goodfirstissue.dev/language/python)
+
+
+## Misc:
+
+- [Access localhost on mobile](https://www.linkedin.com/posts/sohail-js_javascriptwithsohailtips-ugcPost-7049115341955731456-ysUD)
