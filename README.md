@@ -191,6 +191,31 @@ Press `F7`
 - [Good First Issue / Python](https://goodfirstissue.dev/language/python)
 
 
-## Misc:
+## Access Django Server on Another Device (Same Wi-Fi)
 
-- [Access localhost on mobile](https://www.linkedin.com/posts/sohail-js_javascriptwithsohailtips-ugcPost-7049115341955731456-ysUD)
+1. **Copy your MacBook's IP address**  
+   Open Terminal and run:  
+   ```bash
+   ipconfig getifaddr en0
+   ```
+
+2. **Add the IP to `settings.py`**  
+   In your Django project's `settings.py`, add the IP to `ALLOWED_HOSTS`:  
+   ```python
+   ALLOWED_HOSTS = ['your.ip.address.here']
+   ```
+
+3. **Run the server using your IP address**  
+   ```bash
+   python3 manage.py runserver your.ip.address.here:8000
+   ```
+
+4. **Ensure both devices are connected to the same Wi-Fi**
+
+5. **Access the server from the second device**  
+   Open a browser and go to:  
+   ```
+   your.ip.address.here:8000
+   ```
+
+> [Access localhost on mobile](https://www.linkedin.com/posts/sohail-js_javascriptwithsohailtips-ugcPost-7049115341955731456-ysUD)
